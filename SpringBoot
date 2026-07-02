@@ -1,0 +1,92 @@
+What is Spring Boot?
+
+Spring Boot is a Java framework used to build backend applications quickly.
+
+Think of it like this:
+
+Java = The programming language.
+Spring = A powerful framework that provides tools for building enterprise applications.
+Spring Boot = A simplified version of Spring that removes much of the setup and configuration, so you can start building faster.
+Real-world analogy
+
+Imagine you want to build a house.
+
+Java gives you the bricks.
+Spring gives you the architecture and construction tools.
+Spring Boot gives you a nearly ready-to-build house where most of the plumbing and wiring are already set up.
+
+So instead of spending days configuring everything, you focus on building your application's features.
+
+What do companies build with Spring Boot?
+
+A backend handles things like:
+
+User login
+Storing user data
+Processing payments
+Managing orders
+Serving APIs to mobile apps and websites
+
+For example, when you open a food delivery app:
+
+You click Order.
+The app sends a request to the backend.
+A Spring Boot application:
+Checks if you're logged in.
+Verifies the restaurant.
+Saves the order to the database.
+Sends back a confirmation.
+How Spring Boot works
+Mobile App / Website
+          │
+          ▼
+      Spring Boot
+          │
+          ▼
+       SQL Database
+
+The frontend talks to the Spring Boot backend, and the backend talks to the database.
+
+Example
+
+Suppose you have a website that stores students.
+
+A user visits:
+
+GET /students
+
+Spring Boot receives the request.
+
+Your Java code might look like:
+
+@GetMapping("/students")
+public List<Student> getStudents() {
+    return studentService.getAllStudents();
+}
+
+Spring Boot then:
+
+Runs this method.
+Gets the students from the database.
+Returns them as JSON.
+
+Example response:
+
+[
+  {
+    "id": 1,
+    "name": "Ishan"
+  },
+  {
+    "id": 2,
+    "name": "Rahul"
+  }
+]
+Why do companies like Spring Boot?
+Very fast to develop with.
+Reliable for large-scale applications.
+Easy to connect with databases like MySQL and PostgreSQL.
+Large ecosystem and community.
+Common choice for enterprise software.
+
+Many banks, e-commerce platforms, and enterprise companies use it because it's mature and scalable.
