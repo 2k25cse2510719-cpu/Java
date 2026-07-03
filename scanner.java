@@ -11,5 +11,6 @@ double salary=sc.nextDouble();
 System.out.println("Enter Your Grade");
 char grade=sc.next().charAt(0);
 System.out.println(name+" "+age+" "+salary+" "+grade);
+        sc.close();
     }
 }
