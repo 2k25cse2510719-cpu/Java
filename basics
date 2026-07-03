@@ -1,0 +1,5 @@
+Two types of data types 
+(i)primitive= int ,boolean,char&double
+(ii)refrence = string,array&object
+  to declare a variable first declare and then assign the value too.
+int age =0;
