@@ -1,34 +1,166 @@
-1.ArrayList
-ArrayList<Integer> list=new ArrayList<>();
-Adding
-list.add(5);
-Accessing
-list.get(2);
-Editing
-list.set(2,6);
-Removing
-list.remove(list.size()-1);
-Size
-list.size();
-2.Array
-int[] arr=new int[5];
-Size
-arr.length;
-Search at any position 
-int[] arr = {10, 20, 30, 40};
+Java Collection Framework (JCF)
 
-int value = 25;
-int index = 2;
+The Java Collection Framework (JCF) is a set of classes and interfaces in Java that provides a standard way to store, manipulate, and process groups of objects.
 
-int[] newArr = new int[arr.length + 1];
+It is available in the java.util package.
 
-for (int i = 0, j = 0; i < newArr.length; i++) {
+Benefits of Collection Framework
+Dynamic size (unlike arrays)
+Ready-made data structures
+Improved performance
+Reusable and maintainable code
+Supports searching, sorting, insertion, and deletion
+Hierarchy of Collection Framework
+Iterable
+   |
+Collection
+   |
+   +-- List
+   |     +-- ArrayList
+   |     +-- LinkedList
+   |     +-- Vector
+   |     +-- Stack
+   |
+   +-- Set
+   |     +-- HashSet
+   |     +-- LinkedHashSet
+   |     +-- TreeSet
+   |
+   +-- Queue
+         +-- PriorityQueue
+         +-- ArrayDeque
 
-    if (i == index)
-        newArr[i] = value;
-    else
-        newArr[i] = arr[j++];
+Map (separate from Collection)
+   +-- HashMap
+   +-- LinkedHashMap
+   +-- TreeMap
+   +-- Hashtable
+1. List Interface
+
+A List stores elements in insertion order and allows duplicates.
+
+Common Implementations
+Class	Features
+ArrayList	Fast access, dynamic array
+LinkedList	Fast insertion/deletion
+Vector	Synchronized version of ArrayList
+Stack	LIFO (Last In First Out)
+Example
+import java.util.*;
+
+public class ListDemo {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+
+        list.add("Java");
+        list.add("Python");
+        list.add("Java");
+
+        System.out.println(list);
+    }
 }
 
-for (int num : newArr)
-    System.out.print(num + " ");
+Output
+
+[Java, Python, Java]
+2. Set Interface
+
+A Set does not allow duplicate elements.
+
+Common Implementations
+Class	Features
+HashSet	Unordered, fastest
+LinkedHashSet	Maintains insertion order
+TreeSet	Sorted order
+Example
+Set<Integer> set = new HashSet<>();
+
+set.add(10);
+set.add(20);
+set.add(10);
+
+System.out.println(set);
+
+Output
+
+[10, 20]
+3. Queue Interface
+
+A Queue follows FIFO (First In First Out).
+
+Common Implementations
+Class	Features
+PriorityQueue	Elements sorted by priority
+ArrayDeque	Efficient queue and stack
+Example
+Queue<String> q = new LinkedList();
+
+q.add("A");
+q.add("B");
+
+System.out.println(q.poll());
+
+Output
+
+A
+4. Map Interface
+
+A Map stores data in key-value pairs.
+
+Keys are unique.
+Values can be duplicated.
+Not part of the Collection interface.
+Common Implementations
+Class	Features
+HashMap	Unordered
+LinkedHashMap	Maintains insertion order
+TreeMap	Sorted by key
+Hashtable	Synchronized
+Example
+Map<Integer, String> map = new HashMap<>();
+
+map.put(1, "Java");
+map.put(2, "Python");
+
+System.out.println(map.get(1));
+
+Output
+
+Java
+Important Interfaces and Methods
+Collection Methods
+add()
+remove()
+contains()
+size()
+isEmpty()
+clear()
+List Methods
+get(index)
+set(index, value)
+indexOf()
+Queue Methods
+offer()
+poll()
+peek()
+Map Methods
+put()
+get()
+remove()
+keySet()
+values()
+entrySet()
+Comparison of Major Collections
+Feature	ArrayList	LinkedList	HashSet	TreeSet	HashMap
+Ordered	Yes	Yes	No	Sorted	No
+Duplicates	Yes	Yes	No	No	Keys No
+Access Speed	Fast	Slow	Fast	Medium	Fast
+Null Allowed	Yes	Yes	One Null	No	One Null Key
+When to Use Which Collection?
+ArrayList → Frequent data retrieval.
+LinkedList → Frequent insertion/deletion.
+HashSet → Unique elements with fast lookup.
+TreeSet → Sorted unique elements.
+HashMap → Fast key-value storage.
+TreeMap → Sorted key-value storage.
+PriorityQueue → Priority-based processing
