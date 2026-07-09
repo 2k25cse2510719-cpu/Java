@@ -1,0 +1,272 @@
+1. Core Java (Make sure ALL of these are covered)
+
+If the "Core Java" section doesn't include these, learn them separately.
+
+Java Basics
+OOP
+Exception Handling
+File Handling (NIO)
+Multithreading
+Synchronization
+Executors
+Callable & Future
+CompletableFuture ⭐
+Streams API
+Lambda Expressions
+Functional Interfaces
+Method References
+Optional
+Generics
+Reflection ⭐
+Annotations
+Java Collections Framework
+JVM
+JDK vs JRE
+Garbage Collection
+Memory Management
+Serialization
+2. Database Topics Missing
+
+You have JDBC and JPA.
+
+Missing:
+
+Database Design
+Normalization
+Transactions
+ACID Properties
+Indexing ⭐
+Query Optimization
+Stored Procedures
+Views
+Triggers
+Connection Pooling (HikariCP)
+Flyway
+Liquibase
+3. Spring Boot Topics Missing
+
+These are big ones.
+
+Spring Boot Validation
+Bean Validation
+Hibernate Validator
+Validation Groups
+Exception Handling
+Global Exception Handler
+Custom Exceptions
+Controller Advice
+Configuration
+application.properties
+application.yml
+Profiles
+Environment Variables
+Bean Lifecycle
+Bean Scopes
+@Bean
+@Component
+Dependency Injection
+IoC
+Spring Boot Actuator ⭐
+
+Very common in industry.
+
+Scheduling
+@Scheduled
+Async Programming
+@Async
+CompletableFuture
+Caching
+Redis Cache
+Spring Cache
+Email Sending
+Java Mail Sender
+File Upload
+Multipart File
+Pagination
+Pageable
+Sorting
+DTO Pattern
+
+Very important.
+
+ModelMapper / MapStruct
+
+Very useful.
+
+API Versioning
+Swagger / OpenAPI ⭐
+
+Almost every project uses this.
+
+4. Security Missing
+
+You have Spring Security + JWT + OAuth2.
+
+Also learn
+
+Password Encoding
+BCrypt
+CORS
+CSRF
+Authentication vs Authorization
+Refresh Tokens
+Role Based Access Control
+Method Security
+5. Testing Missing
+
+Only JUnit is listed.
+
+Also learn
+
+Mockito ⭐
+Integration Testing
+Testcontainers
+MockMvc
+6. REST API Topics Missing
+REST Best Practices
+Idempotency
+HTTP Status Codes
+Content Negotiation
+HATEOAS (optional)
+7. Build Tools
+
+Maven and Gradle are there.
+
+Also understand
+
+Dependency Management
+Multi-module Projects
+8. Git Missing
+
+Learn
+
+Merge
+Rebase
+Cherry Pick
+Branching Strategy
+GitHub Pull Requests
+GitHub Actions (CI/CD)
+9. Docker Missing
+
+Learn
+
+Docker Compose ⭐
+Volumes
+Networks
+Multi-stage Builds
+10. Kubernetes ❗
+
+Very important.
+
+Missing completely.
+
+Learn
+
+Pods
+Deployments
+Services
+ConfigMaps
+Secrets
+Ingress
+11. Messaging
+
+Kafka is there.
+
+Also know
+
+RabbitMQ
+12. Redis ⭐
+
+Huge missing topic.
+
+Learn
+
+Redis Basics
+Caching
+Sessions
+13. Microservices Missing
+
+The lecture says "Microservices" but make sure it includes
+
+API Gateway
+Service Discovery
+Circuit Breaker
+Config Server
+Distributed Tracing
+OpenFeign
+Resilience4j
+Load Balancing
+14. Cloud Missing
+
+Cloud Deployment is broad.
+
+Try learning basics of one cloud provider:
+
+Amazon Web Services (EC2, RDS, S3)
+or Google Cloud
+or Microsoft Azure
+15. Design Patterns ⭐
+
+A must for interviews.
+
+Singleton
+Factory
+Builder
+Strategy
+Observer
+Adapter
+Decorator
+16. System Design ⭐
+
+Very important once you have the basics.
+
+Learn
+
+Load Balancer
+Reverse Proxy
+Scaling
+CAP Theorem
+Database Sharding
+Caching
+CDN
+Message Queue
+Consistent Hashing
+17. Networking
+
+Backend developers should know
+
+TCP/IP
+HTTP/HTTPS
+SSL/TLS
+DNS
+Cookies
+Sessions
+WebSockets
+18. Linux Missing
+
+Only Linux is mentioned.
+
+Also learn
+
+Shell Scripting
+Permissions
+Cron Jobs
+Systemd
+Nginx ⭐
+19. Monitoring
+
+Very important in production.
+
+Prometheus
+Grafana
+ELK Stack
+Loki
+20. Architecture
+
+Missing
+
+Monolith vs Microservices
+Clean Architecture
+Layered Architecture
+Hexagonal Architecture
+SOLID Principles
